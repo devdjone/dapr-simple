@@ -1,0 +1,20 @@
+dapr run --app-id serviceA --app-port 5000 --components-path D:\web\serviceA\components -- dotnet D:\web\serviceA\serviceA.dll
+
+
+
+Breakdown of the Command
+dapr run:
+
+Starts the Dapr runtime and the application sidecar.
+--app-id serviceA:
+
+Assigns a unique ID to the app in the Dapr ecosystem (serviceA in this case).
+--app-port 5000:
+
+Specifies the port on which your application is listening for HTTP traffic.
+--components-path D:\web\serviceA\components:
+
+Points to the folder where Dapr should look for the pubsub.yml and other components configuration files.
+-- dotnet D:\web\serviceA\serviceA.dll:
+
+Executes the .NET application by running the specified .dll file. The dotnet command runs the compiled application.

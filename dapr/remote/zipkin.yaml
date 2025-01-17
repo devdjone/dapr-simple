@@ -1,0 +1,9 @@
+apiVersion: dapr.io/v1alpha1
+kind: Configuration
+metadata:
+  name: zipkin
+spec:
+  tracing:
+    samplingRate: "1" # 1 means trace every request; 0 means no tracing  sdasadas
+    zipkin:
+      endpointAddress: "http://192.168.0.106:9411/api/v2/spans" # Update this if your Zipkin is on a different host/port

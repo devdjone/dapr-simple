@@ -11,17 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TunisiaDevDays.AppHost", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TunisiaDevDays.ServiceDefaults", "TunisiaDevDays.ServiceDefaults\TunisiaDevDays.ServiceDefaults.csproj", "{5006C19A-1679-4EE2-B043-2EFADBE6DF27}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{327AF434-263D-4383-865B-96C0B166424C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dapr", "dapr", "{89EEB786-EC2C-430F-AC55-1A7A9FBCE579}"
 	ProjectSection(SolutionItems) = preProject
-		dapr commands.txt = dapr commands.txt
-		..\..\..\.dapr\components\pubsub.yaml = ..\..\..\.dapr\components\pubsub.yaml
-		..\..\..\.dapr\components\statestore.yaml = ..\..\..\.dapr\components\statestore.yaml
-		..\..\..\.dapr\components\zipkin.yaml = ..\..\..\.dapr\components\zipkin.yaml
+		Components\dapr commands.txt = Components\dapr commands.txt
+		dapr\local\pubsub.yaml = dapr\local\pubsub.yaml
+		dapr\local\statestore.yaml = dapr\local\statestore.yaml
+		dapr\local\zipkin.yaml = dapr\local\zipkin.yaml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "local", "local", "{8CA253D6-FB0C-42ED-A904-750620ABA822}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "remote", "remote", "{F3367C9F-4119-402A-A79A-ECB946AFA2E4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "remote", "remote", "{BC92D87E-43CC-4817-B561-541B9D3D020D}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\.dapr\components-old\pubsub.yaml = ..\..\..\.dapr\components-old\pubsub.yaml
 		..\..\..\.dapr\components-old\statestore.yaml = ..\..\..\.dapr\components-old\statestore.yaml
@@ -55,7 +53,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{8CA253D6-FB0C-42ED-A904-750620ABA822} = {327AF434-263D-4383-865B-96C0B166424C}
-		{F3367C9F-4119-402A-A79A-ECB946AFA2E4} = {327AF434-263D-4383-865B-96C0B166424C}
+		{BC92D87E-43CC-4817-B561-541B9D3D020D} = {89EEB786-EC2C-430F-AC55-1A7A9FBCE579}
 	EndGlobalSection
 EndGlobal

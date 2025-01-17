@@ -1,0 +1,20 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: pubsub
+spec:
+  type: pubsub.redis
+  version: v1
+  metadata:
+    - name: redisHost
+      value: 192.168.0.106:6379
+    - name: consumerID
+      value: "sms-processor-group"    # Add this to create a consumer group
+    - name: streamMaxLen
+      value: 1000                     # Optional: Max length of stream
+    - name: redeliverInterval
+      value: "30s"                    # Optional: Redelivery interval for failed messages
+    - name: processingTimeout
+      value: "60s"                    # Optional: Processing timeout
+    - name: useStreams
+      value: "true"                   # Important: Explicitly enable Redis Streams
