@@ -15,8 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dapr", "dapr", "{89EEB786-E
 	ProjectSection(SolutionItems) = preProject
 		Components\dapr commands.txt = Components\dapr commands.txt
 		dapr\local\pubsub.yaml = dapr\local\pubsub.yaml
+		dapr\pc\pubsub.yaml = dapr\pc\pubsub.yaml
 		dapr\local\statestore.yaml = dapr\local\statestore.yaml
+		dapr\pc\statestore.yaml = dapr\pc\statestore.yaml
 		dapr\local\zipkin.yaml = dapr\local\zipkin.yaml
+		dapr\pc\zipkin.yaml = dapr\pc\zipkin.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "remote", "remote", "{BC92D87E-43CC-4817-B561-541B9D3D020D}"
